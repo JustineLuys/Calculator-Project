@@ -38,10 +38,10 @@ p {
     width: 400px;
     padding: 20px;
     border-radius: 15px;
-    background-color: rgb(179, 177, 177);
+    background-color: #fed7af;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
 }
 
 .screen {
@@ -52,10 +52,12 @@ p {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .upper-screen, .lower-screen {
     display: flex;
     height: 50px;
+    overflow: hidden;
 }
 .lower-screen {
     justify-content: flex-end;
@@ -75,34 +77,56 @@ p {
 
 .btn.numbers, .btn.operator, .btn.dot, .btn.equal {
     width: 80px;
+    border: 2px solid black;
 }
 
 .btn {
     height: 75px;
-    font-size: 25px;
-    border-radius: 5px;
+    font-size: 22px;
+    border-radius: 10px;
+    color:#21254A;
+    font-weight: bold;
 }
-
-.clear {
-    background-color: rgb(245, 129, 129);
+.btn.numbers {
+    background-color: #fad3f4;
+    
 }
-
 .btn.numbers:hover{
-    background-color: rgb(177, 169, 169);
+    background-color: #ff1e6d
 }
 
 .btn.operator:hover{
-    background-color: rgb(177, 169, 169);
-}
-
-.clear:hover {
-    background-color: rgb(196, 54, 54);
-}
-
-.delete {
     background-color: rgb(63, 238, 238);
 }
 
-.delete:hover {
+.btn.clear:hover {
+    background-color: rgb(196, 54, 54);
+}
+
+.btn.delete:hover {
     background-color: rgb(45, 175, 175);
+}
+
+.btn.operator {
+    background-color: #89ffc8;
+    color: #21254A;
+}
+
+.btn.equal:hover{
+    background-color: #49f009;
+}
+.btn.equal {
+    background-color: #1eff71;
+}
+
+.btn.clear {
+    background-color: #e38ba0;
+}
+
+.btn.delete {
+    background-color: #eb55d4;
+}
+
+.btn.dot {
+    background-color: #008af9;
 }
